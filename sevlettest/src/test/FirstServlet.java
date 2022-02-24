@@ -1,4 +1,4 @@
-package ch5;
+package test;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

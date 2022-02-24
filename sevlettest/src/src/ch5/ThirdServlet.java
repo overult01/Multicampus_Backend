@@ -1,4 +1,4 @@
-package ch5;
+package src.ch5;
 
 import java.io.IOException;
 

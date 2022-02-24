@@ -1,4 +1,4 @@
-package ch6;
+package src.ch6;
 
 import java.io.IOException;
 import java.io.PrintWriter;
