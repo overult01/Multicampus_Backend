@@ -1,4 +1,4 @@
-package src.ch6;
+package ch6;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,8 +19,8 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// 요청자로부터 사용자가 입력한 id, pw추출
-		String id =request.getParameter("id"); // getParameter: input태그의 name속성의 값
-		String pw = request.getParameter("pw");
+		String id =request.getParameter("id"); // getParameter: input태그의 name속성의 값. 서버쪽에서는 name속성을 읽어온다.
+		String pw = request.getParameter("pw"); 
 		
 		// 처리
 		// 결과 응답 내용
