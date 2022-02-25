@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript">
+$(document).ready(function() {
+	
+});
+</script>
+  
+<title>HttpServletResponse를 이용한 서블릿 응답 실습</title>
+</head>
+<body>
+
+<!-- /없이 문자로 바로 시작하면 현재 html과 연결되어있는 서블릿으로 보낸다  -->
+<form action="calc">
+<input type = number name = "num1">
+<select name = "math">
+	<option value = "+">+</option>
+	<option value = "-">-</option>
+	<option value = "*">*</option>
+	<option value = "/">/</option>
+	<option value = "%">%</option>
+</select>
+<input type = number name = "num2">
+
+<input type = submit value ="계산">
+
+</form>
+
+</body>
+</html>
