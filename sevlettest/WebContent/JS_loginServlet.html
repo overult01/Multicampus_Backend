@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript">
+$(document).ready(function() {
+	$("form").on('submit', function(ev){
+		
+		// preventDefault(): 기본동작 하지마. 여기서는 submit타입이므로 이동 하지마.
+		// ev.preventDefault();
+		
+/* 		$("input:text")와 같다. */
+		if($("input[type = text]").val() == "admin" ||
+			$("input[type = text]").val() == "administrator" ||	
+			$("input[type = text]").val() == "administration") {
+				$("input:hidden").val("admin"); // input태그에 value를 admin으로 넣는다.
+		}
+		else{
+			$("input:hidden").val("user"); // input태그에 value를 user로 넣는다.
+		}
+		
+		// this가 여기선 form태그. 따라서 this. 으로 속성 넣을 수 있다.
+		this.action = "loginjs";
+		this.method = "post"; // 405에러: 허용되지 않는 메서드
+		
+	});
+});
+</script>
+  
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 경로 똑같으면 http://localhost:8080/servlettest/ 같은 절대경로 생략 가능  -->
+<form action="">
+아이디 입력<input type = text name = "id"><br>
+암호 입력<input type = password name = "pw"><br>
+<!-- hidden 타입: 미리 정해져 있는 값 브라우저 전송. 입력x. -->
+<input type = hidden name= "role"> <!-- 브라우저 렌더링x. 브라우저 전달필요(값 사용자 입력) --> 
+<input type = submit value = "로그인">
+
+<!-- id에 admin, administrator, administration입력하면 role이 admin 혹은 user 2개 중 하나여야 한다. -->
+
+<br>
+<br>
+
+<!-- get방식의 속성 이용: url에 입력값 넣기. 정해져 있는 값이면 이렇게 전달해도 된다. a태그는 기본적으로 get방식.-->
+<!-- 참고로, post방식은 form태그에서 method = post 로 지정해서만 사용할 수 있다. -->
+<a href = "login?id=test&pw=1234">로그인결과보러가기</a>
+
+</form>
+</body>
+</html>
