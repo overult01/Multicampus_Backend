@@ -18,7 +18,9 @@ $(document).ready(function() {
 <body>
 
 <h1>회원가입 폼</h1>
-<form action="../insert_jdbc" method ="get">
+<form action="../forward3" method ="get">
+<!-- 기준경로(루트경로?)포함: <form action="/servlettest/forward3" method ="get"> -->
+<!-- 동일경로 내: <form action="forward3" method ="get"> -->
 아이디 <input type = text name = "id"><br>
 암호 <input type = password name = "pw"><br>
 이름 <input type = text name = "name"><br>
