@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+// 브라우저 내부에서 데이터 공유 하는 방법
+// 쿠키, 세션 중 세션
 @WebServlet(name = "a", urlPatterns = {"/loginsession"})
 public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

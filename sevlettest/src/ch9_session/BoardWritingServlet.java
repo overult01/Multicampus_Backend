@@ -32,10 +32,10 @@ public class BoardWritingServlet extends HttpServlet {
 			out.println("<h1>" + session_id + "회원님, 글쓰기 가능합니다.</h1>");
 			
 			out.println("<table><th>글쓰기 폼</th>"
-					+ "<tr><td>제목</td><td><input type = text placeholder = 제목작성></td></tr>"
-					+ "<tr><td>내용</td><td><textarea>글작성</textarea></td></tr>"
-					+ "<tr><td>작성자</td><td>" + session_id +"</td></tr>"
-					
+					+ "<tr><td>제목</td><td><input type = text placeholder = 제목작성 name = 'title'></td></tr>"
+					+ "<tr><td>내용</td><td><textarea name ='contents' rows = 5 cols = 50>글작성</textarea></td></tr>"
+//					+ "<tr><td>작성자</td><td>" + session_id +"</td></tr>"
+					+ "<tr><td>작성자</td><td><input type = text name = 'writer' value="+session_id+"></td></tr>"
 					+ "</table>");
 		}
 		
