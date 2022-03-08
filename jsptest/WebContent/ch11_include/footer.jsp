@@ -14,12 +14,16 @@ img{
 
 </head>
 <body>
+<%-- <h3> <%= request.getParameter("a") %></h3> --%>
+
+<h3>회원정보 <%= request.getAttribute("dto") %>
+</h3>
 
 <h3>배송 및 반품 연락처 : 010 - 1111 - 2222
 					  031 - 0000 - 1111 
 </h3>
 
-<img alt="" src="/sevlettest/images/android.jpg">
+<img alt="" src="/sevlettest/images/<% request.getParameter("image");%>">
 
 <h3>오시는 길 : 경기도</h3>
 

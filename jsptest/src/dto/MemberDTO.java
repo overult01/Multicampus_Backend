@@ -4,6 +4,10 @@ public class MemberDTO {
 	// 테이블내 1개 레코드 행이 memberDTO. 우리가 보려는 테이블은 member_table인데, 이 테이블에서 1개 레코드 행은 6개의 컬럼으로 구성되어 있다.
 	String id, password, name, phone, email, address;
 	
+	// 기본생성자. jsp useBean에서 사용하려고.
+	public MemberDTO() {	
+	}
+	
 	public MemberDTO(String id, String password, String name, String phone, String email, String address) {
 		super();
 		this.id = id;
