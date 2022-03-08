@@ -88,7 +88,7 @@ servlet 실습 내용들입니다.
   + 제이쿼리 Ajax 기능
   + 제이쿼리에서 JSON 사용하기
 
-## 5️⃣ Spring frameword
+## 5️⃣ Spring framework
 - ch18: 스프링 프레임워크 시작하기
 18.1 프레임워크란?
 18.2 스프링 프레임워크 환경 설정하기
