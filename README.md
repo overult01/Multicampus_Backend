@@ -46,6 +46,8 @@ servlet 실습 내용들입니다.
   + Filter API
   + 여러 가지 서블릿 관련 Listener API
 
+
+## 2️⃣ JSP
 - ch11: JSP 정의와 구성 요소
   + JSP의 3단계 작업 과정
   + JSP 페이지 구성 요소
@@ -66,6 +68,7 @@ servlet 실습 내용들입니다.
   + 포워드 액션 태그 사용하기
   + useBean, setProperty, getProperty 액션 태그 사용하기
 
+## 3️⃣ EL, JSTL
 14장 표현 언어와 JSTL
 14.1 표현 언어란?
 14.2 표현 언어 내장 객체(내장 변수)
@@ -80,6 +83,7 @@ servlet 실습 내용들입니다.
 14.11 문자열 처리 함수 사용하기
 14.12 표현 언어와 JSTL을 이용한 회원 관리 실습
 
+## 4️⃣ Ajax, JSON
 - ch 16: HTML5와 제이쿼리
   + 제이쿼리 Ajax 기능
   + 제이쿼리에서 JSON 사용하기
