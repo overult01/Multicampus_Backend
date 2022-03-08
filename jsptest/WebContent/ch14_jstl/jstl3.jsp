@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>jstl core태그들: c:foreach, c:url, c:param, c:import, c:redirect, d:out</title>
 </head>
 <body>
 
@@ -31,6 +31,24 @@ pageContext.setAttribute("memberMap", memberMap);
 	${vs.index}번째 회원 조회중 - ${dto.key } - ${dto.value.address }<br>
 	${vs.count}번째 회원 조회중 - ${vs.current.key } - ${vs.current.value.address }<br> <!-- dto.key == vs.current.key -->
 </c:forEach>
+
+<!-- c:url : url값을 변수로 저장해두는 역할 -->
+<c:url var = "mypage" value = "http://localhost:8080/jsptest/ch14_jstl/jstl1.jsp"></c:url>
+<c:url var = "mypage2" value = "http://localhost:8080/jsptest/ch14_jstl/jstl2.jsp"></c:url>
+
+
+<!-- c:redirect : 다른 파일로 이동 -->
+<%-- <c:redirect url="${mypage}" /> --%>
+
+
+<!-- c:import : 다른 파일 포함. 현재 페이지 내용 + 포함된 파일 내용 합쳐서 브라우저 출력.  -->
+<%-- <c:import url="${mypage }" /> --%>
+<c:import url="${mypage2 }">
+<!-- c:param으로 url에 값 전달  -->
+	<c:param name="name" value = "이자바"></c:param>
+	<c:param name="age" value = "20"></c:param>	
+</c:import>
+
 
 </body>
 </html>
