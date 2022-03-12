@@ -1,5 +1,5 @@
 # Multicampus_Backend
-servlet 실습 내용들입니다.
+servlet, JSP, AJAX 실습 내용들입니다.
 
 ## 1️⃣ servlet
 - ch5 서블릿 이해하기
