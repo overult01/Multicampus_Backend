@@ -1,16 +1,19 @@
 # Multicampus_Backend
 servlet, JSP, AJAX 실습 내용들입니다.
 
+- [웹 프로그래밍 개발 기초 기념](https://structuring.tistory.com/185?category=987699)
+- [웹 애플리케이션 이해](https://structuring.tistory.com/186?category=987699)
+
 ## 1️⃣ servlet
-- ch5 서블릿 이해하기
+- [ch5 서블릿 이해하기](https://structuring.tistory.com/187?category=987699)
   + 서블릿 API 계층 구조와 기능
-  + 서블릿의 생명주기 메서드: init, doGet, destroy
-  + 서블릿 동작 과정
+  + [서블릿의 생명주기 메서드: init, doGet, destroy](https://structuring.tistory.com/189?category=987699)
+  + [서블릿 동작 과정](https://structuring.tistory.com/188?category=987699)
   + 애너테이션을 이용한 서블릿 매핑
 
 - ch6: 서블릿 기초
-  + 서블릿의 세 가지 기본 기능
-  + form태그 이용해 서블릿에 요청하기
+  + [서블릿의 세 가지 기본 기능, 요청과 응답](https://structuring.tistory.com/190?category=987699)
+  + [form태그 이용해 서블릿에 요청하기](https://structuring.tistory.com/191?category=987699)
   + 서블릿에서 클라이언트의 요청을 얻는 방법: getParameter, getParametValues
   + 서블릿의 응답 처리 방법
   + 웹 브라우저에서 서블릿으로 데이터 전송하기
@@ -19,8 +22,8 @@ servlet, JSP, AJAX 실습 내용들입니다.
 
 - ch7: 서블릿 비즈니스 로직 처리
   + 서블릿의 비즈니스 로직 처리 방법
-  + 서블릿의 데이터베이스 연동하기
-  + DataSource 이용해 데이터베이스 연동하기
+  + [서블릿의 데이터베이스 연동하기](https://structuring.tistory.com/192?category=987699)
+  + [DataSource 이용해 데이터베이스 연동하기](https://structuring.tistory.com/193?category=987699)
   + DataSource 이용해 회원 정보 등록하기
   + 회원 정보 삭제하기
 
